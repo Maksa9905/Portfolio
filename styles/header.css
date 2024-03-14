@@ -1,0 +1,155 @@
+/* Header */
+
+.header * {
+  text-decoration: none;
+}
+
+.header__inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  height: 120px;
+}
+
+.menu-button {
+  display: none;
+}
+
+.header__logo {
+  display: flex;
+}
+
+.header__logo-title {
+  text-transform: uppercase;
+  color: var(--country-orange);
+  padding-top: 6px;
+  font-size: 25px;
+  margin-left: 15px;
+}
+
+.header__toogle-switch {
+  width: 13%;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 150px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  font-weight: lighter;
+  padding: 0 15px;
+}
+
+.header__toogle-switch::before {
+  content: "EN";
+  position: relative;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  right: 8px;
+}
+
+.header__toogle-switch::after {
+  position: relative;
+  content: "RU";
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  left: 8px;
+}
+
+#menu-button {
+  background-color: transparent;
+  border: none;
+  display: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url("/my_project5 (portfolio)/images/More_Grid_Big.svg") no-repeat;
+  width: 50px;
+  height: 50px;
+}
+
+.header__mini_toogle-switch {
+  font-family: "Khula";
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Projects-page */
+
+/* Media Requests */
+
+@media screen and (width > 1000px) {
+  .showed-nav {
+    display: none;
+  }
+}
+
+@media screen and (width <= 1000px) {
+  .nav {
+    display: none;
+  }
+
+  #menu-button {
+    display: block;
+  }
+
+  .header__toogle-switch {
+    display: none;
+  }
+
+  .header__mini_toogle-switch {
+    display: block !important;
+  }
+
+  .header__logo {
+    justify-self: center;
+  }
+}
+
+.projects-page__body {
+  #menu-button {
+    background: url("/my_project5 (portfolio)/images/More_Grid_Big_black.svg")
+      no-repeat;
+  }
+}
+
+@media screen and (width <= 425px) {
+  .header__logo-title {
+    display: none;
+  }
+
+  .header__logo img {
+    transform: scale(1.2);
+  }
+}
+
+@media screen and (width <= 1000px) {
+  .header__toogle-switch {
+    display: none;
+  }
+
+  #mini_nav {
+    display: flex;
+  }
+
+  .projects-page__body .header__mini_toogle-switch {
+    display: block !important;
+    color: rgb(19, 98, 130);
+  }
+}

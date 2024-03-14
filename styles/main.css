@@ -1,0 +1,197 @@
+/* Home-page */
+
+.main {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.main__inner {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+.main__title h1 {
+  font-size: 70px;
+  line-height: 1.3em;
+  margin-bottom: 0;
+}
+
+.main__title h1:first-child {
+  color: var(--very-light-orange);
+}
+
+.main__description {
+  margin-top: 50px;
+}
+
+.main__subtitle::before {
+  content: url("/my_project5 (portfolio)/images/Gear.svg");
+  position: relative;
+  top: 14px;
+  margin-right: 15px;
+}
+
+/* About-page1 */
+.about-page__body {
+  .main {
+    margin-top: 2vh;
+    margin-bottom: 0;
+
+    .main__inner {
+      h1 {
+        margin-bottom: 10px;
+      }
+      p {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+/* Experience */
+
+.experience__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.experience__content > img {
+  width: 35%;
+  margin-right: 30px;
+}
+
+.experience__map {
+  display: grid;
+  grid-template-columns: 150px 60px 300px;
+  grid-template-rows: 102px 102px 50px;
+  gap: 5px;
+}
+
+.experience__map h2 {
+  font-size: 22px;
+  font-weight: 700;
+  grid-column: 1;
+  text-align: end;
+  color: rgb(255, 255, 255);
+}
+
+.experience__map img {
+  grid-column: 2;
+  margin: auto;
+}
+
+.experience__map p {
+  grid-column: 3;
+  margin-top: 10px;
+}
+
+/* Projects */
+
+.projects-page__body {
+  .main {
+    margin-top: 1vh;
+  }
+
+  .slider__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    img {
+      height: 23%;
+      width: 23%;
+    }
+  }
+
+  .project_description {
+    color: var(--midnight-black);
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.768);
+    backdrop-filter: blur(5px);
+    padding: 30px 40px;
+    font-size: 18px;
+
+    h1 {
+      font-size: 50px;
+      font-weight: 800;
+    }
+
+    h3 {
+      color: rgb(95, 95, 95);
+      margin-top: 10px;
+    }
+
+    a {
+      margin-top: 15px;
+    }
+
+    .projects-nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    .projects-nav img {
+      width: 10%;
+      height: 10%;
+    }
+  }
+}
+
+/* Media Req */
+
+@media screen and (width<=1200px) {
+  .experience__content {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .experience__map {
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr;
+    grid-template-rows: 102px 102px 50px;
+    gap: 5px;
+  }
+
+  .experience__content > img {
+    min-width: 320px;
+    width: 50%;
+    margin-top: 100px;
+    margin-right: 0;
+  }
+
+  .main {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  .main__title h1 {
+    font-size: 60px;
+    line-height: 1.25em;
+  }
+
+  .main__description {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (width <=600px) {
+  .about-page__body {
+    .main {
+      .main__inner {
+        h1 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  background-color: var(--midnight-black);
+  height: 100%;
+}
+
+/* Переписать в отдельный файл */
+html {
+  height: 100%;
+}
+
+.arrow-right {
+  height: 100%;
+  width: 5vw;
+  /* max-width: 50px; */
+  position: absolute;
+  right: 0;
+}
+
+.arrow-left {
+  left: 0;
+}
+
+/* Media Request */
+@media screen and (width<=1200px) {
+  body {
+    overflow: auto !important;
+    height: auto;
+  }
+  .about-page__body {
+    .arrow-right {
+      display: none;
+    }
+  }
+}
+
+@media screen and (width<=1000px) {
+  html {
+    height: auto;
+  }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABOUT</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="styles/index.css" />
+    <script src="https://unpkg.com/swup@4"></script>
+    <script>
+      const swup = new Swup();
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body id="swup" class="about-page__body" style="overflow: hidden">
+    <a href="about1.html"
+      ><img class="arrow-right arrow-left" src="images/Chevron_Left.svg" alt=""
+    /></a>
+    <div class="background">
+      <!-- animation -->
+      <svg
+        id="home-page__ellipse1"
+        viewBox="0 0 1215 1214"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1214.5 607C1214.5 942.237 942.733 1214 607.496 1214C272.259 1214 0.495728 942.237 0.495728 607C0.495728 271.763 272.259 0 607.496 0C942.733 0 1214.5 271.763 1214.5 607Z"
+        />
+      </svg>
+      <svg
+        id="home-page__ellipse2"
+        viewBox="0 0 821 821"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M821 410.5C821 637.213 637.213 821 410.5 821C183.787 821 0 637.213 0 410.5C0 183.787 183.787 0 410.5 0C637.213 0 821 183.787 821 410.5Z"
+        />
+      </svg>
+      <img
+        style="bottom: 2vh"
+        class="about-page__bg__programmer"
+        src="images/about-page2--programmer.svg"
+        alt=""
+      />
+    </div>
+    <header class="header">
+      <div class="header__inner container">
+        <input onclick="showMenu()" type="checkbox" id="menu-button" />
+        <a href="index.html"
+          ><div class="header__logo">
+            <img src="images/Code-icon.svg" alt="" />
+            <h1 class="header__logo-title">developer</h1>
+          </div></a
+        >
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="about1.html">About</a>
+          <a href="experience.html">Experience</a>
+          <a href="projects.html">Projects</a>
+        </nav>
+        <div class="header__toogle-switch">
+          <input class="toogle-switch" type="checkbox" />
+        </div>
+        <button class="header__mini_toogle-switch" style="display: none">
+          EN
+        </button>
+      </div>
+    </header>
+    <div id="mini_nav" class="masked-nav">
+      <a href="index.html">Home</a>
+      <a href="about1.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+    </div>
+    <main class="main transition-fade">
+      <div class="main__inner container">
+        <p>
+          However, one day, I discovered front-end programming and was amazed
+          by the impressive results. A beautiful website
+          with animations became a reality through
+          my code. This experience changed my mind about programming forever. 
+          Although both types of programming are important, front-end
+          development has always been my favorite.
+        </p>
+        <p>
+          For me, it's the most exciting part of the process. Programming has
+          become a way for me to express my creativity and create something
+          meaningful. In 2023, I enrolled in a university
+          and began to take programming seriously. During our first year at
+          university, we studied C and C++ and learned the basics of
+          object-oriented programming. Simultaneously, I began to do
+          layout work.
+        </p>
+      </div>
+    </main>
+    <footer class="footer">
+      <a href="about1.html"
+        ><img
+          class="arrow-right arrow-left"
+          src="images/Chevron_Left.svg"
+          alt=""
+      /></a>
+      <div class="footer__contacts container">
+        <a href="https://vk.com/pakbkoec"><img src="images/vk-icon.svg" /></a>
+        <a href="https://t.me/vbn224htc"
+          ><img src="images/telegram-icon.svg"
+        /></a>
+        <a href="https://github.com/Maksa9905">
+          <img src="images/github-icon.svg" alt=""
+        /></a>
+      </div>
+    </footer>
+    <img
+      class="body_animation_ellips transition-ellips"
+      src="images/Ellipse 3 (1).svg"
+      alt=""
+    />
+  </body>
+</html>
